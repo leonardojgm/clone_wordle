@@ -1,0 +1,93 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.principal__titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+}
+
+.principal__tabela {
+    margin: 0.5rem auto 0.5rem;
+}
+
+.principal__linha {
+    display: flex;
+    flex-direction: row;
+}
+
+.principal__celula {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid var(--cinza-claro);
+    margin: 0.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letra-errada {
+    background-color: var(--cinza-medio) !important;
+}
+
+.letra-posicao-errada {
+    background-color: var(--amarelo) !important;
+}
+
+.letra-certa {
+    background-color: var(--verde) !important;
+}
+
+.principal__teclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+
+.principal__teclas {
+    display: flex;
+    flex-direction: row;
+}
+
+.principal__tecla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.8rem;
+    height: 3rem;
+    background-color: var(--cinza-claro);
+    color: var(--branco);
+    border: 1px solid var(--cinza-claro);
+    margin: 0.2rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.principal__tecla:hover:enabled {
+    box-shadow: 0 0 10px var(--cinza-claro);
+}
+
+.principal__tecla:disabled {
+    cursor: not-allowed;
+}
+
+.tecla-enter {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .principal__tecla {
+        width: 3rem;
+    }   
+
+    .tecla-enter {
+        width: 30rem;
+    } 
+}

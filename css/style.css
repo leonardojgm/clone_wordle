@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('reset.css');
+@import url('cabecalho.css');
+@import url('principal.css');
+
+:root {
+    --amarelo: #B59F3B;
+    --amarelo-claro: #F9FF00;
+    --branco: #FFFFFF;
+    --cinza-escuro: #14161C;
+    --cinza-medio: #585858;
+    --cinza-claro: #818384;
+    --verde: #538D4E;
+    --verde-escuro: #2B5028;
+    --vermelho: #5F0F1D;
+}
+
+body {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+    font-family: 'Inter', sans-serif;
+    user-select: none;
+}
